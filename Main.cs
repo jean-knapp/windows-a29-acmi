@@ -26,19 +26,6 @@ namespace windows_a29_acmi
             updateEntitiesList();
         }
 
-        private void addAircraft_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if(selectAcmiFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                Aircraft aircraft = A29FileReader.readMNGFile(selectAcmiFileDialog.FileName, this);
-                if(aircraft != null)
-                {
-                    entities.Add(aircraft);
-                    updateEntitiesList();
-                }
-            }
-        }
-
         private void clearAircrafts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             foreach(Aircraft aircraft in getAircrafts())
@@ -61,19 +48,6 @@ namespace windows_a29_acmi
                 }
             }
             return result;
-        }
-
-        private void importFromPMAButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            if(dialog.ShowDialog() == DialogResult.OK)
-            {
-                PMANode root = PMAFile.read(dialog.FileName);
-
-                entities = importFromPMATraverse(root, null);
-
-                updateEntitiesList();
-            }
         }
 
         private List<BaseEntity> importFromPMATraverse(PMANode root, BaseEntity parent)
@@ -170,25 +144,7 @@ namespace windows_a29_acmi
 
         private void ThreatsGroundImport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(selectXMLFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                threats = A29FileReader.readAVD_AREAFile(selectXMLFileDialog.FileName, this);
-                MessageBox.Show(threats.Count + string.Empty);
-            }
-        }
 
-        private void toTacview_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if(saveTacviewFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                String directory = Path.GetDirectoryName(saveTacviewFileDialog.FileName);
-                switch(new FileInfo(saveTacviewFileDialog.FileName).Extension)
-                {
-                    case ".acmi":
-                        ACMIFileWriter.writeACMIFile(saveTacviewFileDialog.FileName, getAircrafts(), this);
-                        break;
-                }
-            }
         }
 
         private void traverseEntitiesList(List<BaseEntity> entities, TreeListNode parentNode)
@@ -197,8 +153,8 @@ namespace windows_a29_acmi
             {
                 TreeListNode node = entityList.AppendNode(new object[] { entities[i].Name }, parentNode);
                 node.Tag = entities[i];
-                imageCollection1.AddImage(Image.FromFile("" +
-                    entities[i].getImageSource()));
+                //imageCollection1.AddImage(Image.FromFile("" +
+                    //entities[i].getImageSource()));
 
                 if(entities[i] is Folder)
                 {
@@ -220,21 +176,74 @@ namespace windows_a29_acmi
             entityList.EndUnboundLoad();
         }
 
-        internal void setStatusCoordinates(double latitude, double longitude, double elevation)
+        internal List<GroundThreat> Threats { get => threats; set => threats = value; }
+
+        private void addAircraft_ItemClick(object sender, DevExpress.XtraBars.Ribbon.RecentItemEventArgs e)
         {
-            statusCoordinateText.Caption = "Lat: " + latitude + ", Long: " + longitude;
-            switch(unitsElevation)
+            if (selectAcmiFileDialog.ShowDialog() == DialogResult.OK)
             {
-                case "ft":
-                    statusElevationText.Caption = "Elev: " + (int)(elevation * 3.28084) + "ft";
-                    break;
-                case "m":
-                default:
-                    statusElevationText.Caption = "Elev: " + (int)elevation + "m";
-                    break;
+                Aircraft aircraft = A29FileReader.readMNGFile(selectAcmiFileDialog.FileName, this);
+                if (aircraft != null)
+                {
+                    entities.Add(aircraft);
+                    updateEntitiesList();
+                }
+
+                ribbonControl1.HideApplicationButtonContentControl();
             }
         }
 
-        internal List<GroundThreat> Threats { get => threats; set => threats = value; }
+        private void threatGroundImport_ItemClick(object sender, DevExpress.XtraBars.Ribbon.RecentItemEventArgs e)
+        {
+            if (selectXMLFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                threats = A29FileReader.readAVD_AREAFile(selectXMLFileDialog.FileName, this);
+                MessageBox.Show(threats.Count + string.Empty);
+
+                ribbonControl1.HideApplicationButtonContentControl();
+            }
+            
+        }
+
+        private void PMAImport_ItemClick(object sender, DevExpress.XtraBars.Ribbon.RecentItemEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                PMANode root = PMAFile.read(dialog.FileName);
+
+                entities = importFromPMATraverse(root, null);
+
+                updateEntitiesList();
+                ribbonControl1.HideApplicationButtonContentControl();
+            }
+            
+        }
+
+        private void saveToTacview_ItemClick(object sender, DevExpress.XtraBars.Ribbon.RecentItemEventArgs e)
+        {
+            if (saveTacviewFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                String directory = Path.GetDirectoryName(saveTacviewFileDialog.FileName);
+                switch (new FileInfo(saveTacviewFileDialog.FileName).Extension)
+                {
+                    case ".acmi":
+                        ACMIFileWriter.writeACMIFile(saveTacviewFileDialog.FileName, getAircrafts(), this);
+                        break;
+                }
+                ribbonControl1.HideApplicationButtonContentControl();
+            }
+            
+        }
+
+        private void backstageNewButton_ItemPressed(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            ribbonControl1.HideApplicationButtonContentControl();
+        }
+
+        private void backstageExitButton_ItemPressed(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            Close();
+        }
     }
 }
