@@ -239,6 +239,10 @@ namespace windows_a29_acmi
         private void backstageNewButton_ItemPressed(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
             ribbonControl1.HideApplicationButtonContentControl();
+
+            entities.Clear();
+            threats.Clear();
+            updateEntitiesList();
         }
 
         private void backstageExitButton_ItemPressed(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
