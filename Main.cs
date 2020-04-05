@@ -8,6 +8,7 @@ using System.Globalization;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using windows_a29_acmi.export;
 
 namespace windows_a29_acmi
 {
@@ -182,7 +183,7 @@ namespace windows_a29_acmi
         {
             if (selectAcmiFileDialog.ShowDialog() == DialogResult.OK)
             {
-                Aircraft aircraft = A29FileReader.readMNGFile(selectAcmiFileDialog.FileName, this);
+                Aircraft aircraft = A29FileReader.ReadMNGFile(selectAcmiFileDialog.FileName, this);
                 if (aircraft != null)
                 {
                     entities.Add(aircraft);
@@ -197,7 +198,7 @@ namespace windows_a29_acmi
         {
             if (selectXMLFileDialog.ShowDialog() == DialogResult.OK)
             {
-                threats = A29FileReader.readAVD_AREAFile(selectXMLFileDialog.FileName, this);
+                threats = A29FileReader.ReadAVD_AREAFile(selectXMLFileDialog.FileName, this);
                 MessageBox.Show(threats.Count + string.Empty);
 
                 ribbonControl1.HideApplicationButtonContentControl();
@@ -248,6 +249,16 @@ namespace windows_a29_acmi
         private void backstageExitButton_ItemPressed(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
             Close();
+        }
+
+        private void recentButtonItem5_ItemClick(object sender, DevExpress.XtraBars.Ribbon.RecentItemEventArgs e)
+        {
+            if (saveTacviewCSVDialog.ShowDialog() == DialogResult.OK)
+            {
+                String directory = Path.GetDirectoryName(saveTacviewCSVDialog.SelectedPath);
+                TacviewCSVFileWritter.writeFile(saveTacviewCSVDialog.SelectedPath, getAircrafts(), this);
+                ribbonControl1.HideApplicationButtonContentControl();
+            }
         }
     }
 }

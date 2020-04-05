@@ -10,8 +10,88 @@ namespace windows_a29_acmi
 {
     class ACMIFileWriter
     {
+        private static List<Aircraft> CalculateEventPositions(List<Aircraft> aircrafts, Main main)
+        {
+            for (int id = 0; id < aircrafts.Count; id++)
+            {
+                // Clear aircraft hits
+                aircrafts[id].hits = new List<BaseEvent>();
+                aircrafts[id].kills = 0;
+                aircrafts[id].deaths = 0;
+                aircrafts[id].assists = 0;
+
+                // Calculate ECMs first
+                foreach (BaseEvent ev in aircrafts[id].events.Where(n => n.type == BaseEvent.TYPE_ECM))
+                {
+                    ev.calculatePositions(aircrafts, main);
+                }
+            }
+
+            for (int id = 0; id < aircrafts.Count; id++)
+
+                // Calculate the other events
+                for (int i = 0; i < aircrafts[id].events.Count; i++)
+                {
+                    BaseEvent ev = aircrafts[id].events[i];
+                    ev.calculatePositions(aircrafts, main);
+                }
+
+                return aircrafts;
+        }
+
+        private static void CalculateKills(List<Aircraft> aircrafts, Main main)
+        {
+            // Aircraft hits
+            int currentHits = 0;
+            int hitTimeout = int.Parse(main.combatHitTimeout.EditValue.ToString());
+            int hitsToKill = int.Parse(main.combatGunsHitsToKill.EditValue.ToString());
+            for (int id = 0; id < aircrafts.Count; id++)
+            {
+                Aircraft aircraft = aircrafts[id];
+                for (int i = 0; i < aircraft.hits.Count; i++)
+                {
+                    BaseEvent ev = aircraft.hits[i];
+
+                    switch (ev.type)
+                    {
+                        case BaseEvent.TYPE_INGUN:
+                            {
+                                currentHits++;
+
+                                if (i >= aircraft.hits.Count - 1 || aircraft.hits[i + 1].type != BaseEvent.TYPE_INGUN || aircraft.hits[i + 1].time >= ev.time + hitTimeout)
+                                {
+                                    if (currentHits < hitsToKill)
+                                    {
+                                        aircraft.deaths += 1;
+                                        ev.parent.kills += 1;
+                                    }
+
+                                    currentHits = 0;
+                                }
+                            }
+                            break;
+                        case BaseEvent.TYPE_AIM9L:
+                            {
+                                aircraft.deaths += 1;
+                                ev.parent.kills += 1;
+                                currentHits = 0;
+                            }
+                            break;
+                        case BaseEvent.TYPE_EXPLOSION:
+                            {
+                                aircraft.deaths += 1;
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+
         public static void writeACMIFile(String path, List<Aircraft> aircrafts, Main main)
         {
+            CalculateEventPositions(aircrafts, main);
+            CalculateKills(aircrafts, main);
+
             var csv = new StringBuilder();
             csv.AppendLine("FileType=text/acmi/tacview");
             csv.AppendLine("FileVersion=2.1");
@@ -23,34 +103,13 @@ namespace windows_a29_acmi
 
             // TODO set mission category (i.e. Close air support)
             if (main.categoryEditBar.EditValue != null)
-            {
                 csv.AppendLine("Category=" + main.categoryEditBar.EditValue.ToString());
-            }
 
             // TODO set reference time
             if (main.dateEditBar.EditValue != null)
-            {
                 csv.AppendLine("0,ReferenceTime=" + main.dateEditBar.EditValue.ToString() + "T00:00:00Z");
-            }
             else
-            {
                 csv.AppendLine("0,ReferenceTime=2000-01-01T00:00:00Z");
-            }
-
-            for (int id = 0; id < aircrafts.Count; id++)
-            {
-                // Clear aircraft hits
-                aircrafts[id].hits = new List<BaseEvent>();
-                aircrafts[id].kills = 0;
-                aircrafts[id].deaths = 0;
-                aircrafts[id].assists = 0;
-
-                // Calculate ECMs
-                foreach (BaseEvent ev in aircrafts[id].events.Where(n => n.type == BaseEvent.TYPE_ECM))
-                {
-                    ev.calculatePositions(aircrafts, main);
-                }
-            }
 
             int eventId = 1;
             for (int id = 0; id < aircrafts.Count; id++)
@@ -65,11 +124,9 @@ namespace windows_a29_acmi
                 {
                     AircraftPosition position = aircraft.positions[i];
 
-                    var timeLine = string.Format("#{0}",
-                        position.time.ToString()
-                    );
-                    csv.AppendLine(timeLine);
+                    csv.AppendLine(string.Format("#{0}", position.time.ToString()));
 
+                    // First line representing the aircraft should be complete
                     if (i == 0)
                     {
                         var newLine = string.Format("{0},T={1}|{2}|{3}|{4}|{5}|{6},Name={7},Type={8},ShortName={9},LongName={10},CallSign={11},Registration={12},Pilot={13},Group={14},Country={15},Coalition={16},Color={17},Shape={18}",
@@ -118,7 +175,6 @@ namespace windows_a29_acmi
 
                     String eventIdHex = (eventId).ToString("X7");
                     eventId++;
-                    ev.calculatePositions(aircrafts, main);
 
                     for (int pos = 0; pos < ev.positions.Count; pos++)
                     {
@@ -271,8 +327,8 @@ namespace windows_a29_acmi
 
                                     if (currentHits < hitsToKill)
                                     {
-                                        aircraft.deaths += 1;
-                                        ev.parent.kills += 1;
+                                        //aircraft.deaths += 1;
+                                        //ev.parent.kills += 1;
 
                                         csv.AppendLine(string.Format("0,Event=Message|{0}|{1} has been killed by {2}",
                                             aircraft.hexId,
@@ -300,8 +356,8 @@ namespace windows_a29_acmi
                             break;
                         case BaseEvent.TYPE_AIM9L:
                             {
-                                aircraft.deaths += 1;
-                                ev.parent.kills += 1;
+                                //aircraft.deaths += 1;
+                                //ev.parent.kills += 1;
                                 currentHits = 0;
 
                                 // Add hit object

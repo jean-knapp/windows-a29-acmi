@@ -8,7 +8,7 @@ namespace windows_a29_acmi
 {
     class A29FileReader
     {
-        public static Aircraft readMNGFile(String path, Main main)
+        public static Aircraft ReadMNGFile(String path, Main main)
         {
             // Read the MNG File.
             XmlDocument doc = new XmlDocument();
@@ -21,11 +21,11 @@ namespace windows_a29_acmi
             foreach (XmlNode recordNode in doc.SelectSingleNode("AACMI_MNG").ChildNodes)
             {
                 String recordPath = directory + "\\" + recordNode.SelectSingleNode("File_Name").InnerText;
-                A29FileReader.readACDATFile(aircraft, recordPath);
+                A29FileReader.ReadACDATFile(aircraft, recordPath);
             }
 
             // Read the EVENTS file.
-            A29FileReader.readEVENTSFile(aircraft, directory + "\\EVENTS.xml", main);
+            A29FileReader.ReadEVENTSFile(aircraft, directory + "\\EVENTS.xml", main);
 
             // Show a dialog to get extra data.
             AddAircraft dialog = new AddAircraft();
@@ -43,7 +43,7 @@ namespace windows_a29_acmi
             }
             return null;
         }
-        public static void readACDATFile(Aircraft aircraft, String path)
+        public static void ReadACDATFile(Aircraft aircraft, String path)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
@@ -108,7 +108,7 @@ namespace windows_a29_acmi
             }
         }
 
-        public static void readEVENTSFile(Aircraft aircraft, String path, Main main)
+        public static void ReadEVENTSFile(Aircraft aircraft, String path, Main main)
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(path);
@@ -279,7 +279,7 @@ namespace windows_a29_acmi
             }
         }
 
-        public static List<GroundThreat> readAVD_AREAFile(String path, Main main)
+        public static List<GroundThreat> ReadAVD_AREAFile(String path, Main main)
         {
             // Read the MNG File.
             XmlDocument doc = new XmlDocument();

@@ -89,7 +89,6 @@
             DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
             this.selectAcmiFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.saveTacviewFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
@@ -171,6 +170,9 @@
             this.entityList = new DevExpress.XtraTreeList.TreeList();
             this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.recentButtonItem5 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
+            this.saveTacviewCSVDialog = new DevExpress.XtraEditors.XtraFolderBrowserDialog(this.components);
+            this.saveTacviewFileDialog = new DevExpress.XtraEditors.XtraSaveFileDialog(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
@@ -209,10 +211,6 @@
             // selectAcmiFileDialog
             // 
             this.selectAcmiFileDialog.Filter = "AACMI Files|*.mng";
-            // 
-            // saveTacviewFileDialog
-            // 
-            this.saveTacviewFileDialog.Filter = "ACMI 2.1|*.acmi";
             // 
             // ribbonPage2
             // 
@@ -272,8 +270,8 @@
             // 
             // backstageViewControl1
             // 
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator1);
@@ -281,27 +279,27 @@
             this.backstageViewControl1.Items.Add(this.backstageImportButton);
             this.backstageViewControl1.Items.Add(this.backstageSaveAsButton);
             this.backstageViewControl1.Items.Add(this.backstageExitButton);
-            this.backstageViewControl1.Location = new System.Drawing.Point(278, 141);
+            this.backstageViewControl1.Location = new System.Drawing.Point(319, 56);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.backstageNewButton;
-            this.backstageViewControl1.SelectedTabIndex = 1;
-            this.backstageViewControl1.Size = new System.Drawing.Size(859, 392);
+            this.backstageViewControl1.SelectedTab = this.backstageSaveAsButton;
+            this.backstageViewControl1.SelectedTabIndex = 3;
+            this.backstageViewControl1.Size = new System.Drawing.Size(755, 530);
             this.backstageViewControl1.TabIndex = 16;
             // 
             // backstageViewClientControl3
             // 
-            this.backstageViewClientControl3.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl3.Location = new System.Drawing.Point(165, 62);
             this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            this.backstageViewClientControl3.Size = new System.Drawing.Size(693, 328);
+            this.backstageViewClientControl3.Size = new System.Drawing.Size(694, 330);
             this.backstageViewClientControl3.TabIndex = 3;
             // 
             // backstageViewClientControl1
             // 
             this.backstageViewClientControl1.Controls.Add(this.recentItemControl1);
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(165, 62);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(165, 63);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(694, 330);
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(589, 466);
             this.backstageViewClientControl1.TabIndex = 1;
             // 
             // recentItemControl1
@@ -313,7 +311,7 @@
             this.recentItemControl1.MainPanel = this.recentStackPanel1;
             this.recentItemControl1.Name = "recentItemControl1";
             this.recentItemControl1.SelectedTab = this.recentTabItem1;
-            this.recentItemControl1.Size = new System.Drawing.Size(694, 330);
+            this.recentItemControl1.Size = new System.Drawing.Size(589, 466);
             this.recentItemControl1.TabIndex = 0;
             this.recentItemControl1.Title = "Import";
             // 
@@ -344,9 +342,9 @@
             // 
             // recentButtonItem1
             // 
-            this.recentButtonItem1.Caption = "A-29 ACDAT";
+            this.recentButtonItem1.Caption = "A-29 MMC";
             this.recentButtonItem1.Name = "recentButtonItem1";
-            this.recentButtonItem1.Size = new System.Drawing.Size(111, 54);
+            this.recentButtonItem1.Size = new System.Drawing.Size(102, 54);
             this.recentButtonItem1.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.addAircraft_ItemClick);
             // 
             // recentTabItem2
@@ -365,9 +363,9 @@
             // 
             // recentButtonItem2
             // 
-            this.recentButtonItem2.Caption = "A-29 Avoid Areas (DTC)";
+            this.recentButtonItem2.Caption = "A-29 DTC";
             this.recentButtonItem2.Name = "recentButtonItem2";
-            this.recentButtonItem2.Size = new System.Drawing.Size(168, 54);
+            this.recentButtonItem2.Size = new System.Drawing.Size(94, 54);
             this.recentButtonItem2.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.threatGroundImport_ItemClick);
             // 
             // recentButtonItem4
@@ -380,9 +378,9 @@
             // backstageViewClientControl4
             // 
             this.backstageViewClientControl4.Controls.Add(this.recentItemControl2);
-            this.backstageViewClientControl4.Location = new System.Drawing.Point(165, 62);
+            this.backstageViewClientControl4.Location = new System.Drawing.Point(165, 63);
             this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            this.backstageViewClientControl4.Size = new System.Drawing.Size(694, 330);
+            this.backstageViewClientControl4.Size = new System.Drawing.Size(589, 466);
             this.backstageViewClientControl4.TabIndex = 4;
             // 
             // recentItemControl2
@@ -394,7 +392,7 @@
             this.recentItemControl2.MainPanel = this.recentStackPanel5;
             this.recentItemControl2.Name = "recentItemControl2";
             this.recentItemControl2.SelectedTab = this.recentTabItem3;
-            this.recentItemControl2.Size = new System.Drawing.Size(694, 330);
+            this.recentItemControl2.Size = new System.Drawing.Size(589, 466);
             this.recentItemControl2.TabIndex = 0;
             this.recentItemControl2.Title = "Save As";
             // 
@@ -419,7 +417,8 @@
             // 
             this.recentStackPanel7.Caption = "Tacview";
             this.recentStackPanel7.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
-            this.recentButtonItem3});
+            this.recentButtonItem3,
+            this.recentButtonItem5});
             this.recentStackPanel7.Name = "recentStackPanel7";
             // 
             // recentButtonItem3
@@ -446,7 +445,6 @@
             this.backstageNewButton.ContentControl = this.backstageViewClientControl3;
             this.backstageNewButton.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("backstageNewButton.ImageOptions.ItemNormal.SvgImage")));
             this.backstageNewButton.Name = "backstageNewButton";
-            this.backstageNewButton.Selected = true;
             this.backstageNewButton.ItemPressed += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageNewButton_ItemPressed);
             // 
             // backstageImportButton
@@ -462,6 +460,7 @@
             this.backstageSaveAsButton.ContentControl = this.backstageViewClientControl4;
             this.backstageSaveAsButton.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("backstageSaveAsButton.ImageOptions.ItemNormal.SvgImage")));
             this.backstageSaveAsButton.Name = "backstageSaveAsButton";
+            this.backstageSaveAsButton.Selected = true;
             // 
             // backstageExitButton
             // 
@@ -1157,6 +1156,17 @@
             // 
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
             // 
+            // recentButtonItem5
+            // 
+            this.recentButtonItem5.Caption = "CSV";
+            this.recentButtonItem5.Name = "recentButtonItem5";
+            this.recentButtonItem5.Size = new System.Drawing.Size(65, 54);
+            this.recentButtonItem5.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.recentButtonItem5_ItemClick);
+            // 
+            // saveTacviewFileDialog
+            // 
+            this.saveTacviewFileDialog.Filter = "ACMI 2.1|*.acmi";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1211,7 +1221,6 @@
 
         #endregion
         private System.Windows.Forms.OpenFileDialog selectAcmiFileDialog;
-        private System.Windows.Forms.SaveFileDialog saveTacviewFileDialog;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage homePage;
@@ -1293,6 +1302,9 @@
         private DevExpress.XtraBars.Ribbon.RecentStackPanel recentStackPanel7;
         private DevExpress.XtraBars.Ribbon.RecentButtonItem recentButtonItem3;
         private DevExpress.XtraBars.Ribbon.RecentButtonItem recentButtonItem4;
+        private DevExpress.XtraBars.Ribbon.RecentButtonItem recentButtonItem5;
+        private DevExpress.XtraEditors.XtraFolderBrowserDialog saveTacviewCSVDialog;
+        private DevExpress.XtraEditors.XtraSaveFileDialog saveTacviewFileDialog;
     }
 }
 
