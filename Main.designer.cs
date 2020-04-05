@@ -30,6 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem19 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem20 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem21 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem22 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem23 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem14 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem24 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
@@ -37,21 +49,31 @@
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem17 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem27 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem16 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem26 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip15 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipItem toolTipItem15 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem25 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup4 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem28 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem29 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem30 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem31 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem32 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem33 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem34 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem35 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem36 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
@@ -64,34 +86,20 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem15 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem8 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem9 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem19 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem20 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem21 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem22 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
             this.selectAcmiFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.recentItemControl2 = new DevExpress.XtraBars.Ribbon.RecentItemControl();
+            this.recentStackPanel6 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentStackPanel5 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentTabItem3 = new DevExpress.XtraBars.Ribbon.RecentTabItem();
+            this.recentStackPanel7 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
+            this.recentButtonItem3 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
+            this.recentButtonItem5 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
             this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.recentItemControl1 = new DevExpress.XtraBars.Ribbon.RecentItemControl();
@@ -104,13 +112,6 @@
             this.recentStackPanel4 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
             this.recentButtonItem2 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
             this.recentButtonItem4 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
-            this.backstageViewClientControl4 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.recentItemControl2 = new DevExpress.XtraBars.Ribbon.RecentItemControl();
-            this.recentStackPanel6 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentStackPanel5 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentTabItem3 = new DevExpress.XtraBars.Ribbon.RecentTabItem();
-            this.recentStackPanel7 = new DevExpress.XtraBars.Ribbon.RecentStackPanel();
-            this.recentButtonItem3 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
             this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.backstageViewItemSeparator1 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
             this.backstageNewButton = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
@@ -170,16 +171,15 @@
             this.entityList = new DevExpress.XtraTreeList.TreeList();
             this.treeListColumn1 = new DevExpress.XtraTreeList.Columns.TreeListColumn();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.recentButtonItem5 = new DevExpress.XtraBars.Ribbon.RecentButtonItem();
             this.saveTacviewCSVDialog = new DevExpress.XtraEditors.XtraFolderBrowserDialog(this.components);
             this.saveTacviewFileDialog = new DevExpress.XtraEditors.XtraSaveFileDialog(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
-            this.backstageViewClientControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.recentItemControl1)).BeginInit();
             this.backstageViewClientControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recentItemControl2)).BeginInit();
+            this.backstageViewClientControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recentItemControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit)).BeginInit();
@@ -270,9 +270,9 @@
             // 
             // backstageViewControl1
             // 
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl4);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
             this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator1);
             this.backstageViewControl1.Items.Add(this.backstageNewButton);
@@ -282,16 +282,78 @@
             this.backstageViewControl1.Location = new System.Drawing.Point(319, 56);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.OwnerControl = this.ribbonControl1;
-            this.backstageViewControl1.SelectedTab = this.backstageSaveAsButton;
-            this.backstageViewControl1.SelectedTabIndex = 3;
+            this.backstageViewControl1.SelectedTab = this.backstageImportButton;
+            this.backstageViewControl1.SelectedTabIndex = 2;
             this.backstageViewControl1.Size = new System.Drawing.Size(755, 530);
             this.backstageViewControl1.TabIndex = 16;
+            // 
+            // backstageViewClientControl4
+            // 
+            this.backstageViewClientControl4.Controls.Add(this.recentItemControl2);
+            this.backstageViewClientControl4.Location = new System.Drawing.Point(165, 63);
+            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
+            this.backstageViewClientControl4.Size = new System.Drawing.Size(589, 466);
+            this.backstageViewClientControl4.TabIndex = 4;
+            // 
+            // recentItemControl2
+            // 
+            this.recentItemControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.recentItemControl2.DefaultContentPanel = this.recentStackPanel6;
+            this.recentItemControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.recentItemControl2.Location = new System.Drawing.Point(0, 0);
+            this.recentItemControl2.MainPanel = this.recentStackPanel5;
+            this.recentItemControl2.Name = "recentItemControl2";
+            this.recentItemControl2.SelectedTab = this.recentTabItem3;
+            this.recentItemControl2.Size = new System.Drawing.Size(589, 466);
+            this.recentItemControl2.TabIndex = 0;
+            this.recentItemControl2.Title = "Save As";
+            // 
+            // recentStackPanel6
+            // 
+            this.recentStackPanel6.Name = "recentStackPanel6";
+            // 
+            // recentStackPanel5
+            // 
+            this.recentStackPanel5.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
+            this.recentTabItem3});
+            this.recentStackPanel5.Name = "recentStackPanel5";
+            this.recentStackPanel5.SelectedItem = this.recentTabItem3;
+            // 
+            // recentTabItem3
+            // 
+            this.recentTabItem3.Caption = "Tacview";
+            this.recentTabItem3.Name = "recentTabItem3";
+            this.recentTabItem3.TabPanel = this.recentStackPanel7;
+            // 
+            // recentStackPanel7
+            // 
+            this.recentStackPanel7.Caption = "Tacview";
+            this.recentStackPanel7.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
+            this.recentButtonItem3,
+            this.recentButtonItem5});
+            this.recentStackPanel7.Name = "recentStackPanel7";
+            // 
+            // recentButtonItem3
+            // 
+            this.recentButtonItem3.Caption = "ACMI 2.1";
+            this.recentButtonItem3.ImageOptions.ItemNormal.Image = global::windows_a29_acmi.Properties.Resources.file_tacview;
+            this.recentButtonItem3.Name = "recentButtonItem3";
+            this.recentButtonItem3.Size = new System.Drawing.Size(147, 84);
+            this.recentButtonItem3.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.saveToTacview_ItemClick);
+            // 
+            // recentButtonItem5
+            // 
+            this.recentButtonItem5.Caption = "CSV";
+            this.recentButtonItem5.ImageOptions.ItemNormal.Image = global::windows_a29_acmi.Properties.Resources.file_text;
+            this.recentButtonItem5.Name = "recentButtonItem5";
+            this.recentButtonItem5.Size = new System.Drawing.Size(120, 84);
+            this.recentButtonItem5.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.recentButtonItem5_ItemClick);
             // 
             // backstageViewClientControl3
             // 
             this.backstageViewClientControl3.Location = new System.Drawing.Point(165, 62);
             this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            this.backstageViewClientControl3.Size = new System.Drawing.Size(694, 330);
+            this.backstageViewClientControl3.Size = new System.Drawing.Size(590, 468);
             this.backstageViewClientControl3.TabIndex = 3;
             // 
             // backstageViewClientControl1
@@ -343,8 +405,9 @@
             // recentButtonItem1
             // 
             this.recentButtonItem1.Caption = "A-29 MMC";
+            this.recentButtonItem1.ImageOptions.ItemNormal.Image = global::windows_a29_acmi.Properties.Resources.file_text;
             this.recentButtonItem1.Name = "recentButtonItem1";
-            this.recentButtonItem1.Size = new System.Drawing.Size(102, 54);
+            this.recentButtonItem1.Size = new System.Drawing.Size(157, 84);
             this.recentButtonItem1.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.addAircraft_ItemClick);
             // 
             // recentTabItem2
@@ -364,75 +427,24 @@
             // recentButtonItem2
             // 
             this.recentButtonItem2.Caption = "A-29 DTC";
+            this.recentButtonItem2.ImageOptions.ItemNormal.Image = global::windows_a29_acmi.Properties.Resources.file_text;
             this.recentButtonItem2.Name = "recentButtonItem2";
-            this.recentButtonItem2.Size = new System.Drawing.Size(94, 54);
+            this.recentButtonItem2.Size = new System.Drawing.Size(149, 84);
             this.recentButtonItem2.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.threatGroundImport_ItemClick);
             // 
             // recentButtonItem4
             // 
             this.recentButtonItem4.Caption = "PMA";
+            this.recentButtonItem4.ImageOptions.ItemNormal.Image = global::windows_a29_acmi.Properties.Resources.file_text;
             this.recentButtonItem4.Name = "recentButtonItem4";
-            this.recentButtonItem4.Size = new System.Drawing.Size(70, 54);
+            this.recentButtonItem4.Size = new System.Drawing.Size(125, 84);
             this.recentButtonItem4.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.PMAImport_ItemClick);
-            // 
-            // backstageViewClientControl4
-            // 
-            this.backstageViewClientControl4.Controls.Add(this.recentItemControl2);
-            this.backstageViewClientControl4.Location = new System.Drawing.Point(165, 63);
-            this.backstageViewClientControl4.Name = "backstageViewClientControl4";
-            this.backstageViewClientControl4.Size = new System.Drawing.Size(589, 466);
-            this.backstageViewClientControl4.TabIndex = 4;
-            // 
-            // recentItemControl2
-            // 
-            this.recentItemControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.recentItemControl2.DefaultContentPanel = this.recentStackPanel6;
-            this.recentItemControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.recentItemControl2.Location = new System.Drawing.Point(0, 0);
-            this.recentItemControl2.MainPanel = this.recentStackPanel5;
-            this.recentItemControl2.Name = "recentItemControl2";
-            this.recentItemControl2.SelectedTab = this.recentTabItem3;
-            this.recentItemControl2.Size = new System.Drawing.Size(589, 466);
-            this.recentItemControl2.TabIndex = 0;
-            this.recentItemControl2.Title = "Save As";
-            // 
-            // recentStackPanel6
-            // 
-            this.recentStackPanel6.Name = "recentStackPanel6";
-            // 
-            // recentStackPanel5
-            // 
-            this.recentStackPanel5.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
-            this.recentTabItem3});
-            this.recentStackPanel5.Name = "recentStackPanel5";
-            this.recentStackPanel5.SelectedItem = this.recentTabItem3;
-            // 
-            // recentTabItem3
-            // 
-            this.recentTabItem3.Caption = "Tacview";
-            this.recentTabItem3.Name = "recentTabItem3";
-            this.recentTabItem3.TabPanel = this.recentStackPanel7;
-            // 
-            // recentStackPanel7
-            // 
-            this.recentStackPanel7.Caption = "Tacview";
-            this.recentStackPanel7.Items.AddRange(new DevExpress.XtraBars.Ribbon.RecentItemBase[] {
-            this.recentButtonItem3,
-            this.recentButtonItem5});
-            this.recentStackPanel7.Name = "recentStackPanel7";
-            // 
-            // recentButtonItem3
-            // 
-            this.recentButtonItem3.Caption = "ACMI 2.1";
-            this.recentButtonItem3.Name = "recentButtonItem3";
-            this.recentButtonItem3.Size = new System.Drawing.Size(92, 54);
-            this.recentButtonItem3.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.saveToTacview_ItemClick);
             // 
             // backstageViewClientControl2
             // 
             this.backstageViewClientControl2.Location = new System.Drawing.Point(165, 62);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(694, 330);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(590, 468);
             this.backstageViewClientControl2.TabIndex = 2;
             // 
             // backstageViewItemSeparator1
@@ -453,6 +465,7 @@
             this.backstageImportButton.ContentControl = this.backstageViewClientControl1;
             this.backstageImportButton.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("backstageImportButton.ImageOptions.ItemNormal.SvgImage")));
             this.backstageImportButton.Name = "backstageImportButton";
+            this.backstageImportButton.Selected = true;
             // 
             // backstageSaveAsButton
             // 
@@ -460,7 +473,6 @@
             this.backstageSaveAsButton.ContentControl = this.backstageViewClientControl4;
             this.backstageSaveAsButton.ImageOptions.ItemNormal.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("backstageSaveAsButton.ImageOptions.ItemNormal.SvgImage")));
             this.backstageSaveAsButton.Name = "backstageSaveAsButton";
-            this.backstageSaveAsButton.Selected = true;
             // 
             // backstageExitButton
             // 
@@ -541,15 +553,15 @@
             this.combatHitTimeout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatHitTimeout.ImageOptions.Image")));
             this.combatHitTimeout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatHitTimeout.ImageOptions.SvgImage")));
             this.combatHitTimeout.Name = "combatHitTimeout";
-            toolTipTitleItem1.Text = "Hit timeout";
-            toolTipItem1.LeftIndent = 6;
-            toolTipItem1.Text = "The amount of time between hits until it\'s considered another pass.";
-            toolTipTitleItem2.LeftIndent = 6;
-            toolTipTitleItem2.Text = "in seconds";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            superToolTip1.Items.Add(toolTipItem1);
-            superToolTip1.Items.Add(toolTipTitleItem2);
-            this.combatHitTimeout.SuperTip = superToolTip1;
+            toolTipTitleItem19.Text = "Hit timeout";
+            toolTipItem12.LeftIndent = 6;
+            toolTipItem12.Text = "The amount of time between hits until it\'s considered another pass.";
+            toolTipTitleItem20.LeftIndent = 6;
+            toolTipTitleItem20.Text = "in seconds";
+            superToolTip12.Items.Add(toolTipTitleItem19);
+            superToolTip12.Items.Add(toolTipItem12);
+            superToolTip12.Items.Add(toolTipTitleItem20);
+            this.combatHitTimeout.SuperTip = superToolTip12;
             // 
             // repositoryItemSpinEdit2
             // 
@@ -580,15 +592,15 @@
             this.combatMissileFOV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatMissileFOV.ImageOptions.Image")));
             this.combatMissileFOV.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatMissileFOV.ImageOptions.SvgImage")));
             this.combatMissileFOV.Name = "combatMissileFOV";
-            toolTipTitleItem3.Text = "Seeker FOV";
-            toolTipItem2.LeftIndent = 6;
-            toolTipItem2.Text = "The sector the seeker is able to lock onto a target.";
-            toolTipTitleItem4.LeftIndent = 6;
-            toolTipTitleItem4.Text = "in degrees";
-            superToolTip2.Items.Add(toolTipTitleItem3);
-            superToolTip2.Items.Add(toolTipItem2);
-            superToolTip2.Items.Add(toolTipTitleItem4);
-            this.combatMissileFOV.SuperTip = superToolTip2;
+            toolTipTitleItem21.Text = "Seeker FOV";
+            toolTipItem13.LeftIndent = 6;
+            toolTipItem13.Text = "The sector the seeker is able to lock onto a target.";
+            toolTipTitleItem22.LeftIndent = 6;
+            toolTipTitleItem22.Text = "in degrees";
+            superToolTip13.Items.Add(toolTipTitleItem21);
+            superToolTip13.Items.Add(toolTipItem13);
+            superToolTip13.Items.Add(toolTipTitleItem22);
+            this.combatMissileFOV.SuperTip = superToolTip13;
             // 
             // repositoryItemSpinEdit3
             // 
@@ -617,15 +629,15 @@
             this.combatMissileTimeout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatMissileTimeout.ImageOptions.Image")));
             this.combatMissileTimeout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatMissileTimeout.ImageOptions.SvgImage")));
             this.combatMissileTimeout.Name = "combatMissileTimeout";
-            toolTipTitleItem5.Text = "Rocket timeout";
-            toolTipItem3.LeftIndent = 6;
-            toolTipItem3.Text = "The amount of time before the missile selfdestructs.";
-            toolTipTitleItem6.LeftIndent = 6;
-            toolTipTitleItem6.Text = "in seconds";
-            superToolTip3.Items.Add(toolTipTitleItem5);
-            superToolTip3.Items.Add(toolTipItem3);
-            superToolTip3.Items.Add(toolTipTitleItem6);
-            this.combatMissileTimeout.SuperTip = superToolTip3;
+            toolTipTitleItem23.Text = "Rocket timeout";
+            toolTipItem14.LeftIndent = 6;
+            toolTipItem14.Text = "The amount of time before the missile selfdestructs.";
+            toolTipTitleItem24.LeftIndent = 6;
+            toolTipTitleItem24.Text = "in seconds";
+            superToolTip14.Items.Add(toolTipTitleItem23);
+            superToolTip14.Items.Add(toolTipItem14);
+            superToolTip14.Items.Add(toolTipTitleItem24);
+            this.combatMissileTimeout.SuperTip = superToolTip14;
             // 
             // repositoryItemSpinEdit4
             // 
@@ -659,16 +671,16 @@
             this.combatMissileTriggerDistance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatMissileTriggerDistance.ImageOptions.Image")));
             this.combatMissileTriggerDistance.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatMissileTriggerDistance.ImageOptions.SvgImage")));
             this.combatMissileTriggerDistance.Name = "combatMissileTriggerDistance";
-            toolTipTitleItem7.Text = "Trigger distance";
-            toolTipItem4.LeftIndent = 6;
-            toolTipItem4.Text = "The distance from the closest target the proximity sensor should activate the war" +
+            toolTipTitleItem1.Text = "Trigger distance";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = "The distance from the closest target the proximity sensor should activate the war" +
     "head.";
-            toolTipTitleItem8.LeftIndent = 6;
-            toolTipTitleItem8.Text = "in meters";
-            superToolTip4.Items.Add(toolTipTitleItem7);
-            superToolTip4.Items.Add(toolTipItem4);
-            superToolTip4.Items.Add(toolTipTitleItem8);
-            this.combatMissileTriggerDistance.SuperTip = superToolTip4;
+            toolTipTitleItem2.LeftIndent = 6;
+            toolTipTitleItem2.Text = "in meters";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            superToolTip1.Items.Add(toolTipTitleItem2);
+            this.combatMissileTriggerDistance.SuperTip = superToolTip1;
             // 
             // repositoryItemSpinEdit5
             // 
@@ -697,12 +709,12 @@
             this.combatGunsHitsToKill.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatGunsHitsToKill.ImageOptions.Image")));
             this.combatGunsHitsToKill.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatGunsHitsToKill.ImageOptions.SvgImage")));
             this.combatGunsHitsToKill.Name = "combatGunsHitsToKill";
-            toolTipTitleItem9.Text = "Hits to kill";
-            toolTipItem5.LeftIndent = 6;
-            toolTipItem5.Text = "The amount of hits in a single pass required to kill the target";
-            superToolTip5.Items.Add(toolTipTitleItem9);
-            superToolTip5.Items.Add(toolTipItem5);
-            this.combatGunsHitsToKill.SuperTip = superToolTip5;
+            toolTipTitleItem3.Text = "Hits to kill";
+            toolTipItem2.LeftIndent = 6;
+            toolTipItem2.Text = "The amount of hits in a single pass required to kill the target";
+            superToolTip2.Items.Add(toolTipTitleItem3);
+            superToolTip2.Items.Add(toolTipItem2);
+            this.combatGunsHitsToKill.SuperTip = superToolTip2;
             // 
             // repositoryItemSpinEdit6
             // 
@@ -731,13 +743,13 @@
             this.ecmConvertBex.Id = 16;
             this.ecmConvertBex.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ecmConvertBex.ImageOptions.SvgImage")));
             this.ecmConvertBex.Name = "ecmConvertBex";
-            toolTipTitleItem10.Text = "Convert EX11 into ECM";
-            toolTipItem6.LeftIndent = 6;
-            toolTipItem6.Text = "Should EX11 events be considered as a Chaff/Flare event, since the Brazilian A-29" +
+            toolTipTitleItem4.Text = "Convert EX11 into ECM";
+            toolTipItem3.LeftIndent = 6;
+            toolTipItem3.Text = "Should EX11 events be considered as a Chaff/Flare event, since the Brazilian A-29" +
     " doesn\'t record such events?";
-            superToolTip6.Items.Add(toolTipTitleItem10);
-            superToolTip6.Items.Add(toolTipItem6);
-            this.ecmConvertBex.SuperTip = superToolTip6;
+            superToolTip3.Items.Add(toolTipTitleItem4);
+            superToolTip3.Items.Add(toolTipItem3);
+            this.ecmConvertBex.SuperTip = superToolTip3;
             // 
             // combatECMTimeout
             // 
@@ -749,15 +761,15 @@
             this.combatECMTimeout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatECMTimeout.ImageOptions.Image")));
             this.combatECMTimeout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatECMTimeout.ImageOptions.SvgImage")));
             this.combatECMTimeout.Name = "combatECMTimeout";
-            toolTipTitleItem11.Text = "Timeout";
-            toolTipItem7.LeftIndent = 6;
-            toolTipItem7.Text = "The amount of time before the Chaff/Flare dies.";
-            toolTipTitleItem12.LeftIndent = 6;
-            toolTipTitleItem12.Text = "in seconds";
-            superToolTip7.Items.Add(toolTipTitleItem11);
-            superToolTip7.Items.Add(toolTipItem7);
-            superToolTip7.Items.Add(toolTipTitleItem12);
-            this.combatECMTimeout.SuperTip = superToolTip7;
+            toolTipTitleItem5.Text = "Timeout";
+            toolTipItem17.LeftIndent = 6;
+            toolTipItem17.Text = "The amount of time before the Chaff/Flare dies.";
+            toolTipTitleItem27.LeftIndent = 6;
+            toolTipTitleItem27.Text = "in seconds";
+            superToolTip17.Items.Add(toolTipTitleItem5);
+            superToolTip17.Items.Add(toolTipItem17);
+            superToolTip17.Items.Add(toolTipTitleItem27);
+            this.combatECMTimeout.SuperTip = superToolTip17;
             // 
             // repositoryItemSpinEdit7
             // 
@@ -783,15 +795,15 @@
             this.combatGunsTargetEffectiveRadius.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatGunsTargetEffectiveRadius.ImageOptions.Image")));
             this.combatGunsTargetEffectiveRadius.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatGunsTargetEffectiveRadius.ImageOptions.SvgImage")));
             this.combatGunsTargetEffectiveRadius.Name = "combatGunsTargetEffectiveRadius";
-            toolTipTitleItem13.Text = "Target effective radius";
-            toolTipItem8.LeftIndent = 6;
-            toolTipItem8.Text = "The radius around the center of a target bullets should impact.";
-            toolTipTitleItem14.LeftIndent = 6;
-            toolTipTitleItem14.Text = "in meters";
-            superToolTip8.Items.Add(toolTipTitleItem13);
-            superToolTip8.Items.Add(toolTipItem8);
-            superToolTip8.Items.Add(toolTipTitleItem14);
-            this.combatGunsTargetEffectiveRadius.SuperTip = superToolTip8;
+            toolTipTitleItem7.Text = "Target effective radius";
+            toolTipItem16.LeftIndent = 6;
+            toolTipItem16.Text = "The radius around the center of a target bullets should impact.";
+            toolTipTitleItem26.LeftIndent = 6;
+            toolTipTitleItem26.Text = "in meters";
+            superToolTip16.Items.Add(toolTipTitleItem7);
+            superToolTip16.Items.Add(toolTipItem16);
+            superToolTip16.Items.Add(toolTipTitleItem26);
+            this.combatGunsTargetEffectiveRadius.SuperTip = superToolTip16;
             // 
             // repositoryItemSpinEdit10
             // 
@@ -817,15 +829,15 @@
             this.combatGunsBulletTimeout.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("combatGunsBulletTimeout.ImageOptions.Image")));
             this.combatGunsBulletTimeout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("combatGunsBulletTimeout.ImageOptions.SvgImage")));
             this.combatGunsBulletTimeout.Name = "combatGunsBulletTimeout";
-            toolTipTitleItem15.Text = "Bullet timeout";
-            toolTipItem9.LeftIndent = 6;
-            toolTipItem9.Text = "The amount of time before a bullet is no longer effective.";
-            toolTipTitleItem16.LeftIndent = 6;
-            toolTipTitleItem16.Text = "in seconds";
-            superToolTip9.Items.Add(toolTipTitleItem15);
-            superToolTip9.Items.Add(toolTipItem9);
-            superToolTip9.Items.Add(toolTipTitleItem16);
-            this.combatGunsBulletTimeout.SuperTip = superToolTip9;
+            toolTipTitleItem9.Text = "Bullet timeout";
+            toolTipItem15.LeftIndent = 6;
+            toolTipItem15.Text = "The amount of time before a bullet is no longer effective.";
+            toolTipTitleItem25.LeftIndent = 6;
+            toolTipTitleItem25.Text = "in seconds";
+            superToolTip15.Items.Add(toolTipTitleItem9);
+            superToolTip15.Items.Add(toolTipItem15);
+            superToolTip15.Items.Add(toolTipTitleItem25);
+            this.combatGunsBulletTimeout.SuperTip = superToolTip15;
             // 
             // repositoryItemSpinEdit11
             // 
@@ -845,37 +857,37 @@
             // 
             // 
             // 
-            galleryItemGroup1.Caption = "Group1";
-            galleryItem1.Caption = "Blue Marble";
-            galleryItem1.Tag = "bmng";
-            galleryItem2.Caption = "Landsat";
-            galleryItem2.Tag = "landsat";
-            galleryItem3.Caption = "WAC";
-            galleryItem3.Tag = "wac";
-            galleryItem4.Caption = "Bing Aerial";
-            galleryItem4.Tag = "bingAerial";
-            galleryItem5.Caption = "Bing Aerial Labels";
-            galleryItem5.Tag = "bingAerialWithLabels";
-            galleryItem6.Caption = "Bing Roads";
-            galleryItem6.Tag = "bingRoads";
-            galleryItem7.Caption = "Open Street Map";
-            galleryItem7.Tag = "openStreetMap";
-            galleryItem8.Caption = "ENRC L";
-            galleryItem8.Tag = "enrcl";
-            galleryItem9.Caption = "ENRC H";
-            galleryItem9.Tag = "enrch";
-            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem1,
-            galleryItem2,
-            galleryItem3,
-            galleryItem4,
-            galleryItem5,
-            galleryItem6,
-            galleryItem7,
-            galleryItem8,
-            galleryItem9});
+            galleryItemGroup4.Caption = "Group1";
+            galleryItem28.Caption = "Blue Marble";
+            galleryItem28.Tag = "bmng";
+            galleryItem29.Caption = "Landsat";
+            galleryItem29.Tag = "landsat";
+            galleryItem30.Caption = "WAC";
+            galleryItem30.Tag = "wac";
+            galleryItem31.Caption = "Bing Aerial";
+            galleryItem31.Tag = "bingAerial";
+            galleryItem32.Caption = "Bing Aerial Labels";
+            galleryItem32.Tag = "bingAerialWithLabels";
+            galleryItem33.Caption = "Bing Roads";
+            galleryItem33.Tag = "bingRoads";
+            galleryItem34.Caption = "Open Street Map";
+            galleryItem34.Tag = "openStreetMap";
+            galleryItem35.Caption = "ENRC L";
+            galleryItem35.Tag = "enrcl";
+            galleryItem36.Caption = "ENRC H";
+            galleryItem36.Tag = "enrch";
+            galleryItemGroup4.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem28,
+            galleryItem29,
+            galleryItem30,
+            galleryItem31,
+            galleryItem32,
+            galleryItem33,
+            galleryItem34,
+            galleryItem35,
+            galleryItem36});
             this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
+            galleryItemGroup4});
             this.ribbonGalleryBarItem1.Gallery.ImageSize = new System.Drawing.Size(64, 32);
             this.ribbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleCheck;
             this.ribbonGalleryBarItem1.Gallery.ShowItemText = true;
@@ -1042,15 +1054,15 @@
             this.menuOptionsAircraftBearingText.EditWidth = 96;
             this.menuOptionsAircraftBearingText.Id = 10;
             this.menuOptionsAircraftBearingText.Name = "menuOptionsAircraftBearingText";
-            toolTipTitleItem17.Text = "Bearing";
-            toolTipItem10.LeftIndent = 6;
-            toolTipItem10.Text = "Change the true heading of the aircraft at T=0.";
-            toolTipTitleItem18.LeftIndent = 6;
-            toolTipTitleItem18.Text = "In Degrees";
-            superToolTip10.Items.Add(toolTipTitleItem17);
-            superToolTip10.Items.Add(toolTipItem10);
-            superToolTip10.Items.Add(toolTipTitleItem18);
-            this.menuOptionsAircraftBearingText.SuperTip = superToolTip10;
+            toolTipTitleItem11.Text = "Bearing";
+            toolTipItem7.LeftIndent = 6;
+            toolTipItem7.Text = "Change the true heading of the aircraft at T=0.";
+            toolTipTitleItem12.LeftIndent = 6;
+            toolTipTitleItem12.Text = "In Degrees";
+            superToolTip7.Items.Add(toolTipTitleItem11);
+            superToolTip7.Items.Add(toolTipItem7);
+            superToolTip7.Items.Add(toolTipTitleItem12);
+            this.menuOptionsAircraftBearingText.SuperTip = superToolTip7;
             this.menuOptionsAircraftBearingText.Tag = "Bearing";
             // 
             // barEditItem4
@@ -1060,15 +1072,15 @@
             this.barEditItem4.EditWidth = 96;
             this.barEditItem4.Id = 10;
             this.barEditItem4.Name = "barEditItem4";
-            toolTipTitleItem19.Text = "Bearing";
-            toolTipItem11.LeftIndent = 6;
-            toolTipItem11.Text = "Change the true heading of the aircraft at T=0.";
-            toolTipTitleItem20.LeftIndent = 6;
-            toolTipTitleItem20.Text = "In Degrees";
-            superToolTip11.Items.Add(toolTipTitleItem19);
-            superToolTip11.Items.Add(toolTipItem11);
-            superToolTip11.Items.Add(toolTipTitleItem20);
-            this.barEditItem4.SuperTip = superToolTip11;
+            toolTipTitleItem13.Text = "Bearing";
+            toolTipItem8.LeftIndent = 6;
+            toolTipItem8.Text = "Change the true heading of the aircraft at T=0.";
+            toolTipTitleItem14.LeftIndent = 6;
+            toolTipTitleItem14.Text = "In Degrees";
+            superToolTip8.Items.Add(toolTipTitleItem13);
+            superToolTip8.Items.Add(toolTipItem8);
+            superToolTip8.Items.Add(toolTipTitleItem14);
+            this.barEditItem4.SuperTip = superToolTip8;
             this.barEditItem4.Tag = "Bearing";
             // 
             // menuOptionsAircraftAlongText
@@ -1078,15 +1090,15 @@
             this.menuOptionsAircraftAlongText.EditWidth = 96;
             this.menuOptionsAircraftAlongText.Id = 11;
             this.menuOptionsAircraftAlongText.Name = "menuOptionsAircraftAlongText";
-            toolTipTitleItem21.Text = "Along";
-            toolTipItem12.LeftIndent = 6;
-            toolTipItem12.Text = "Change the Y-axis position of the aircraft at T=0.";
-            toolTipTitleItem22.LeftIndent = 6;
-            toolTipTitleItem22.Text = "In Feet";
-            superToolTip12.Items.Add(toolTipTitleItem21);
-            superToolTip12.Items.Add(toolTipItem12);
-            superToolTip12.Items.Add(toolTipTitleItem22);
-            this.menuOptionsAircraftAlongText.SuperTip = superToolTip12;
+            toolTipTitleItem15.Text = "Along";
+            toolTipItem9.LeftIndent = 6;
+            toolTipItem9.Text = "Change the Y-axis position of the aircraft at T=0.";
+            toolTipTitleItem16.LeftIndent = 6;
+            toolTipTitleItem16.Text = "In Feet";
+            superToolTip9.Items.Add(toolTipTitleItem15);
+            superToolTip9.Items.Add(toolTipItem9);
+            superToolTip9.Items.Add(toolTipTitleItem16);
+            this.menuOptionsAircraftAlongText.SuperTip = superToolTip9;
             this.menuOptionsAircraftAlongText.Tag = "Along";
             // 
             // barEditItem1
@@ -1096,9 +1108,9 @@
             this.barEditItem1.EditWidth = 48;
             this.barEditItem1.Id = 8;
             this.barEditItem1.Name = "barEditItem1";
-            toolTipItem13.Text = "The amount of time it between hits until it is considered another pass.";
-            superToolTip13.Items.Add(toolTipItem13);
-            this.barEditItem1.SuperTip = superToolTip13;
+            toolTipItem10.Text = "The amount of time it between hits until it is considered another pass.";
+            superToolTip10.Items.Add(toolTipItem10);
+            this.barEditItem1.SuperTip = superToolTip10;
             // 
             // selectXMLFileDialog
             // 
@@ -1156,13 +1168,6 @@
             // 
             this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
             // 
-            // recentButtonItem5
-            // 
-            this.recentButtonItem5.Caption = "CSV";
-            this.recentButtonItem5.Name = "recentButtonItem5";
-            this.recentButtonItem5.Size = new System.Drawing.Size(65, 54);
-            this.recentButtonItem5.ItemClick += new DevExpress.XtraBars.Ribbon.RecentItemEventHandler(this.recentButtonItem5_ItemClick);
-            // 
             // saveTacviewFileDialog
             // 
             this.saveTacviewFileDialog.Filter = "ACMI 2.1|*.acmi";
@@ -1176,6 +1181,7 @@
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
@@ -1183,10 +1189,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
-            this.backstageViewClientControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.recentItemControl1)).EndInit();
             this.backstageViewClientControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.recentItemControl2)).EndInit();
+            this.backstageViewClientControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.recentItemControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit.CalendarTimeProperties)).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAircraft));
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.tailnumberEdit = new DevExpress.XtraEditors.TextEdit();
             this.coalitionEdit = new DevExpress.XtraEditors.TextEdit();
@@ -191,6 +192,7 @@
             this.Controls.Add(this.colorEdit);
             this.Controls.Add(this.pilotEdit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddAircraft";
